@@ -241,7 +241,6 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Security\prod_user.sql" />
     <Build Include="Security\test_user.sql" />
     <Build Include="Security\test_user_1.sql" />
     <Build Include="Security\RoleMemberships.sql" />
@@ -273,5 +272,9 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="dbo\Tables\Status.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="dbProduct.refactorlog" />
   </ItemGroup>
 </Project>
