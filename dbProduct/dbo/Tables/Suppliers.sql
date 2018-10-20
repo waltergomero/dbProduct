@@ -10,7 +10,7 @@
 	[RegionId]     INT          NULL,
     [Country]      VARCHAR (15) NULL,
     [Phone]        VARCHAR (24) NULL,
-    [Email]        VARCHAR (50) NULL,
+    [Email]        VARCHAR (64) NULL,
     [Notes]        VARCHAR (2048) NULL,
     CONSTRAINT [PK_Suppliers] PRIMARY KEY CLUSTERED ([SupplierID] ASC)
 );

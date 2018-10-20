@@ -19,7 +19,7 @@
     [CreatedBy] VARCHAR(50) NULL, 
     [UpdatedBy] VARCHAR(50) NULL, 
     [StatusId] INT NULL, 
-    [Notes] VARCHAR(512) NULL, 
+    [Notes] VARCHAR(2048) NULL, 
     CONSTRAINT [PK_Orders] PRIMARY KEY CLUSTERED ([OrderID] ASC),
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [dbo].[Customers] ([CustomerID]),
     CONSTRAINT [FK_Orders_Employees] FOREIGN KEY ([EmployeeID]) REFERENCES [dbo].[Employees] ([EmployeeID]),

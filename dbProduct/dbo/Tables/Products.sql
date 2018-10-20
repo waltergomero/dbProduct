@@ -3,7 +3,7 @@
     [ProductName]     VARCHAR (50) NOT NULL,
     [ProductCode] VARCHAR(50) NULL, 
     [SupplierID]      INT          NULL,
-    [CategoryID]      INT          NULL,
+    [CategoryID]      INT          NOT NULL,
     [QuantityPerUnit] VARCHAR (20) NULL,
     [UnitPrice]       MONEY        CONSTRAINT [DF_Products_UnitPrice] DEFAULT ((0)) NULL,
     [UnitsInStock]    SMALLINT     CONSTRAINT [DF_Products_UnitsInStock] DEFAULT ((0)) NULL,
