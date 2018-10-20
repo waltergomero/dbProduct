@@ -10,6 +10,7 @@
     [ShipName]       VARCHAR (40) NULL,
     [ShipAddress]    VARCHAR (60) NULL,
     [ShipCity]       VARCHAR (15) NULL,
+	[ShipStateId]    INT NULL,
     [ShipRegion]     VARCHAR (15) NULL,
     [ShipPostalCode] VARCHAR (10) NULL,
     [ShipCountry]    VARCHAR (15) NULL,

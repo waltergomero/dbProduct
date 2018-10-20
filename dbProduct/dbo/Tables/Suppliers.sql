@@ -5,12 +5,13 @@
     [ContactTitle] VARCHAR (30) NULL,
     [Address]      VARCHAR (60) NULL,
     [City]         VARCHAR (15) NULL,
-    [Region]       VARCHAR (15) NULL,
-    [PostalCode]   VARCHAR (10) NULL,
+    [StateId]      INT          NULL,
+    [ZipCode]      VARCHAR (10) NULL,
+	[RegionId]     INT          NULL,
     [Country]      VARCHAR (15) NULL,
     [Phone]        VARCHAR (24) NULL,
-    [Fax]          VARCHAR (24) NULL,
-    [HomePage]     NTEXT        NULL,
+    [Email]        VARCHAR (50) NULL,
+    [Notes]        VARCHAR (2048) NULL,
     CONSTRAINT [PK_Suppliers] PRIMARY KEY CLUSTERED ([SupplierID] ASC)
 );
 

@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Products] (
     [ProductID]       INT          IDENTITY (1, 1) NOT NULL,
     [ProductName]     VARCHAR (50) NOT NULL,
+    [ProductCode] VARCHAR(50) NULL, 
     [SupplierID]      INT          NULL,
     [CategoryID]      INT          NULL,
     [QuantityPerUnit] VARCHAR (20) NULL,
@@ -10,7 +11,7 @@
     [ReorderLevel]    SMALLINT     CONSTRAINT [DF_Products_ReorderLevel] DEFAULT ((0)) NULL,
     [Discontinued]    BIT          CONSTRAINT [DF_Products_Discontinued] DEFAULT ((0)) NOT NULL,
     [StatusId] INT NULL, 
-    [ProductCode] VARCHAR(50) NULL, 
+    [Notes] VARCHAR(2048) NULL, 
     [CreatedDate] DATETIME NULL, 
     [UpdatedDate] DATETIME NULL, 
     [CreatedBy] VARCHAR(50) NULL, 
