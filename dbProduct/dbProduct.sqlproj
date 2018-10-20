@@ -123,6 +123,7 @@
     <Folder Include="dbo\Views\" />
     <Folder Include="Security\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\AspNetUserTokens.sql">
@@ -273,6 +274,17 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="dbo\Tables\Status.sql" />
+    <Build Include="dbo\Stored Procedures\usp_StatusAdd.sql" />
+    <Build Include="dbo\Stored Procedures\usp_StatusById.sql" />
+    <Build Include="dbo\Stored Procedures\usp_StatusList.sql" />
+    <Build Include="dbo\Stored Procedures\usp_StatusListByType.sql" />
+    <Build Include="dbo\Stored Procedures\usp_StatusUpdate.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+    <Build Include="dbo\Stored Procedures\usp_CategoryAdd.sql" />
+    <Build Include="dbo\Stored Procedures\usp_CategoryById.sql" />
+    <Build Include="dbo\Stored Procedures\usp_CategoryList.sql" />
+    <Build Include="dbo\Stored Procedures\usp_CategoryUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\usp_CategoryDisplayList.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="dbProduct.refactorlog" />
