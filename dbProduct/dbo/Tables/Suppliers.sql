@@ -8,7 +8,7 @@
     [StateId]      INT          NULL,
     [ZipCode]      VARCHAR (10) NULL,
 	[RegionId]     INT          NULL,
-    [Country]      VARCHAR (15) NULL,
+    [CountryId]    INT          NULL,
     [Phone]        VARCHAR (24) NULL,
     [Email]        VARCHAR (64) NULL,
     [Notes]        VARCHAR (2048) NULL,

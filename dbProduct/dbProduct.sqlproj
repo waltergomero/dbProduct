@@ -285,8 +285,15 @@
     <Build Include="dbo\Stored Procedures\usp_CategoryList.sql" />
     <Build Include="dbo\Stored Procedures\usp_CategoryUpdate.sql" />
     <Build Include="dbo\Stored Procedures\usp_CategoryDisplayList.sql" />
+    <Build Include="dbo\Stored Procedures\usp_SupplierDisplayList.sql" />
+    <Build Include="dbo\Stored Procedures\usp_SupplierById.sql" />
+    <Build Include="dbo\Stored Procedures\usp_ProductById.sql" />
+    <Build Include="dbo\Stored Procedures\usp_ProductDisplayList.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="dbProduct.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\StatesScript.sql" />
   </ItemGroup>
 </Project>
