@@ -10,7 +10,7 @@ BEGIN
 	SET NOCOUNT ON;
 	DECLARE @ErrorMessage varchar(255)
 	
-	IF EXISTS(SELECT TOP 1 * FROM [Status] WITH(NOLOCK) WHERE StatusName = @p_chrStatusName)
+	IF EXISTS(SELECT TOP 1 * FROM [Status] WITH(NOLOCK) WHERE StatusName = @p_chrStatusName AND StatusTypeId = @p_intStatusTypeId)
 		BEGIN
 			RAISERROR('This status name already exists.', 16, 1)
 			RETURN -1;

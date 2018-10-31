@@ -1,5 +1,4 @@
 ﻿CREATE PROCEDURE [dbo].[usp_StatusUpdate]
-
 @p_intStatusId int,
 @p_chrStatusName varchar(50),
 @p_intStatusTypeId int
@@ -11,9 +10,9 @@ BEGIN
 	SET NOCOUNT ON;
 	DECLARE @ErrorMessage varchar(255)
 	
-	IF EXISTS(SELECT TOP 1 * FROM [Status] WITH(NOLOCK) WHERE StatusName = @p_chrStatusName AND StatusId <> @p_intStatusId)
+	IF EXISTS(SELECT TOP 1 * FROM [Status] WITH(NOLOCK) WHERE StatusName = @p_chrStatusName AND StatusTypeId = @p_intStatusTypeId AND StatusId <> @p_intStatusId)
 		BEGIN
-			RAISERROR('This status name already exists.', 16, 1)
+			RAISERROR('Status name already exists with the same status type Id.', 16, 1)
 			RETURN -1;
 
 		END
